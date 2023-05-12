@@ -1,0 +1,14 @@
+type: object
+properties:
+  status:
+    type: string
+  msg:
+    type: string
+  error:
+    type: array
+    items: {}
+example:
+  status: ERROR
+  msg: "Unauthorized"
+  errors:
+    - Unauthorized

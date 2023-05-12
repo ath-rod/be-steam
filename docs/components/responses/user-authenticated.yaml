@@ -1,0 +1,18 @@
+type: object
+properties:
+  status:
+    type: string
+  access_token:
+    type: string
+  expires_in:
+    type: integer
+  uuid:
+    type: string
+  created_at:
+    type: string
+example:
+  status: SUCCESS
+  access_token: "eyJhbGciOiJIUzI1NiIsInR5cCI..."
+  expires_in: 3600
+  uuid: ed00239f-e6c4-4ae4-89a2-e0c9dd6392aa
+  created_at: "2023-04-15 17:20:53.836846"

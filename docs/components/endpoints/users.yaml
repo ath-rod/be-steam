@@ -1,0 +1,27 @@
+post:
+  tags:
+    - users
+  summary: Create users
+  description: Allows to create a user accounts
+    with the provided credentials
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../components/request-bodies/create-account.yaml"
+  responses:
+    201:
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: "../components/responses/account-created.yaml"
+    400:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: "../components/responses/bad-request.yaml"
+    500:
+      description: Unexpected Server Error

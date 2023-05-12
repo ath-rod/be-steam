@@ -1,0 +1,32 @@
+post:
+  tags:
+    - users
+  summary: Authenticate user account
+  description: Allows to authenticate a user account and retrieves a JWT-based access token
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../components/request-bodies/create-account.yaml"
+  responses:
+    200:
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: "../components/responses/user-authenticated.yaml"
+    400:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: "../components/responses/bad-request.yaml"
+    401:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: "../components/responses/unauthorized.yaml"
+    500:
+      description: Unexpected Server Error

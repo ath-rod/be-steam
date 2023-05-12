@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Modular API
+  description: This is an API Reference of the Modular 2023
+  license:
+    name: Apache-2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+externalDocs:
+  description: Find out more about OpenAPI generator
+  url: https://openapi-generator.tech
+
+tags:
+  - name: Users
+    description: Users API which handles creating and authentication of user accounts.
+
+paths:
+  /users:
+    $ref: "./components/endpoints/users.yaml"
+  /users/login:
+    $ref: "./components/endpoints/users-login.yaml"

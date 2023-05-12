@@ -1,0 +1,17 @@
+type: object
+properties:
+  status:
+    type: string
+  username:
+    type: string
+  uuid:
+    type: string
+  verified:
+    type: boolean
+  created_at:
+    type: date-time
+example:
+  status: SUCCESS
+  username: JeanRousseau
+  uuid: ed00239f-e6c4-4ae4-89a2-e0c9dd6392aa
+  created_at: "2022-10-02 22:23:35.382873"

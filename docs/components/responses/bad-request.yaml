@@ -1,0 +1,17 @@
+type: object
+properties:
+  status:
+    type: string
+    errors:
+      type: array
+      items: {}
+example:
+  status: ERROR
+  errors:
+    - "username may be already taken"
+    - username:
+        - "required field"
+        - "value does not match regex '([a-zA-Z0-9]{5,})+'"
+    - password:
+        - "required field"
+        - "value does not match regex '([a-zA-Z0-9\\ \\_\\-\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\,\\.\\:\\[\\]\\{\\}]{8,})+'"
