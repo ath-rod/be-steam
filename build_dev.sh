@@ -5,7 +5,7 @@ export PGPASSWORD='postgres'
 do_connect () {
   psql \
   -U postgres \
-  --host 0.0.0.0 \
+  --host 127.0.0.1 \
   --dbname postgres
 }
 

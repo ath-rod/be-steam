@@ -16,7 +16,7 @@ app.secret_key = env.SESSION_SECRET
 
 # Uncomment below statement to
 # bypass browser CORS errors.
-# CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Enable APIs
 app.register_blueprint(users_api, url_prefix="/users")

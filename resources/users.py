@@ -16,7 +16,7 @@ auth_service = Authentication()
 resourse = Blueprint("users", __name__)
 
 
-@resourse.route("", methods=["POST"])
+@resourse.route("/auth", methods=["POST"])
 def post_users():
     user_data = request.get_json()
     error = None
@@ -39,7 +39,7 @@ def post_users():
         return res.json
 
 
-@resourse.route("/login", methods=["POST"])
+@resourse.route("auth/login", methods=["POST"])
 def post_users_login():
     user_data = request.get_json()
     error = None
